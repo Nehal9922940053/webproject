@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+<<<<<<< HEAD
   "engines": {
     "node": "15.6.0",
     "npm": "7.4.0"
@@ -10,6 +11,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
+=======
+   "engines": {
+    "node": "15.6.0",
+     "npm":"7.4.0"
+   },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.js"
+>>>>>>> 9f80efedad60e64d33a44540264c257bb62200cc
   },
   "author": "",
   "license": "ISC",
