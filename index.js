@@ -10,15 +10,15 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT);
 
 */
-const http = require('http')
-const fs = require('fs')
+const express = require('express');
+const app = express();
 
-const server = http.createServer((req, res) => {
-    res.writeHead(200, {
-        'content-type': 'text/html'
-    })
-    fs.createReadStream('index.html').pipe(res)
-})
+app.listen(5000, () => {
+    console.log("Application started Successfully");
+});
 
-server.listen(process.env.PORT || 5000)
+app.use(express.static(__dirname));
+app.get("/", (req, res) => {
+    res.sendFile(__dirname + "/index.html");
+});
 
